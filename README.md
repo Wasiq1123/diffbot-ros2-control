@@ -215,4 +215,4 @@ This hardware interface is the drivetrain foundation for a full [depth-estimatio
 
 ## License
 
-See `LICENSE`.
+ Copyright (c) 2026 Muhammad Wasiq Saleem
