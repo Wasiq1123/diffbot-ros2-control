@@ -25,6 +25,24 @@ The result is a `ros2_control` hardware interface that talks to this ESP32 over 
 
 ---
 
+## Physical Robot
+
+The physical prototype uses a low-cost differential-drive chassis with two independently driven rear wheels and a passive caster for support. An ESP32 handles motor commands, encoder pulse counting, and IMU readings, while the ROS 2 computer runs the `ros2_control` hardware interface and higher-level navigation software over Wi-Fi. A smartphone mounted on the chassis can provide RGB images for vision-based robotics experiments.
+
+### Front Three-Quarter View
+
+![Physical DiffBot prototype, front three-quarter view](robot-front-view.png)
+
+*Assembled robot showing the smartphone mount, two-tier chassis, drive wheel, and caster wheel.*
+
+### Top View and Electronics
+
+![Physical DiffBot prototype, top view](robot-top-view.png)
+
+*Top view showing the motor-driver modules, controller electronics, wiring, and smartphone mounting arrangement.*
+
+---
+
 ## Hardware Overview
 
 | Component | Role | Approx. Cost |
@@ -207,9 +225,15 @@ Or bring up Nav2 pointed at this hardware interface for autonomous navigation.
 
 ---
 
+## Project Demonstration
+
+See the robot and related robotics work in the [project demonstration video collection on Hugging Face](https://huggingface.co/datasets/WasiqSaleem/robotics-project-demonstrations/tree/main).
+
+---
+
 ## Related Work
 
-This hardware interface is the drivetrain foundation for a full [depth-estimation + RTAB-Map SLAM + Nav2 pipeline](#) *(link to your main repo)*, where this robot carries a monocular depth camera fine-tuned for real-time obstacle mapping in a specific deployment environment.
+This hardware interface is the drivetrain foundation for a full depth-estimation, RTAB-Map SLAM, and Nav2 pipeline. Link this section to the corresponding project repository when its final URL is available.
 
 ---
 
